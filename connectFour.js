@@ -7,3 +7,14 @@ function columnClicked(columnName) {
 
 	//change the grit item's image to the image supplied 
 }
+
+function generateTable(){
+	var gridContainer = document.querySelector(".grid-container");
+
+	for (var i = 1; i <= 42; i++) {
+		var gridItem = document.createElement('div');
+		gridItem.setAttribute('class', 'grid-item');
+		gridItem.setAttribute('id', i);
+		gridContainer.appendChild(gridItem);
+	}
+}
